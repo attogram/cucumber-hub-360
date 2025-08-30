@@ -1,1 +1,274 @@
-theme: jekyll-theme-primer
+# Site settings
+title: Cucumber Hub 360° - All Things Cucumber
+description: >-
+  Your ultimate cucumber destination: recipes, skincare, zero-waste tips, smart
+  growing, history, festivals, market data, research, education, design, and
+  consumer alerts - all in one hub.
+
+# Where things are
+source: docs
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+# This defines all the content pillars for the site.
+collections:
+  all-cucumber-recipes: { output: true, permalink: /pillars/:collection/:name }
+  cucumber-skincare-detox:
+    { output: true, permalink: /pillars/:collection/:name }
+  zero-waste-cucumber: { output: true, permalink: /pillars/:collection/:name }
+  cucumber-growing: { output: true, permalink: /pillars/:collection/:name }
+  smart-cucumber-farming:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-history-festivals:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-art-gallery: { output: true, permalink: /pillars/:collection/:name }
+  cucumber-market-data: { output: true, permalink: /pillars/:collection/:name }
+  cucumber-scientific-research:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-product-reviews:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-travel-guides:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-food-safety: { output: true, permalink: /pillars/:collection/:name }
+  cucumber-environmental-impact:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-risks-allergies:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-health-myths: { output: true, permalink: /pillars/:collection/:name }
+  cucumber-superstitions:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-education: { output: true, permalink: /pillars/:collection/:name }
+  cucumber-business-reports:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-design-lifestyle:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-consumer-scams:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-economics-volatility:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumbers-in-movies-media:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-beverages-cocktails:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-supplements-extracts:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-genetics-breeding:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-cultural-symbolism:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-art-design: { output: true, permalink: /pillars/:collection/:name }
+  cucumber-merchandise-retail:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-special-diet-recipes:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-preservation-techniques:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-fashion-textiles:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-global-festivals:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-literature-media:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-kids-activities:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-industrial-uses:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-essential-oil:
+    { output: true, permalink: /pillars/:collection/:name }
+  cucumber-pet-care: { output: true, permalink: /pillars/:collection/:name }
+
+# Set default layouts for pages and collections
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "all-cucumber-recipes"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-skincare-detox"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "zero-waste-cucumber"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-growing"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "smart-cucumber-farming"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-history-festivals"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-art-gallery"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-market-data"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-scientific-research"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-product-reviews"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-travel-guides"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-food-safety"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-environmental-impact"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-risks-allergies"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-health-myths"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-superstitions"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-education"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-business-reports"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-design-lifestyle"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-consumer-scams"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-economics-volatility"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumbers-in-movies-media"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-beverages-cocktails"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-supplements-extracts"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-genetics-breeding"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-cultural-symbolism"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-art-design"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-merchandise-retail"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-special-diet-recipes"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-preservation-techniques"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-fashion-textiles"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-global-festivals"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-literature-media"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-kids-activities"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-industrial-uses"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-essential-oil"
+    values:
+      layout: "pillar"
+  - scope:
+      path: ""
+      type: "cucumber-pet-care"
+    values:
+      layout: "pillar"

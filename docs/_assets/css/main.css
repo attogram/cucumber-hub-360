@@ -1,0 +1,200 @@
+---
+# This empty front matter tells Jekyll to process this file
+---
+
+/*
+ * Cucumber Hub 360° - Main Stylesheet
+ */
+
+/* 1. CSS Variables
+-------------------------------------------------- */
+:root {
+  /* Colors from Jekyll data file */
+  {% for color in site.data.palette %}
+  --{{ color[0] }}: {{ color[1] }};
+  {% endfor %}
+
+  /* Typography */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-base: clamp(1rem, 1vw + 0.5rem, 1.125rem);
+  --line-height-base: 1.6;
+
+  /* Layout */
+  --container-width: 1440px;
+  --container-padding: 1.5rem;
+  --header-height: 70px;
+}
+
+/* 2. Base & Reset
+-------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--cuke-text);
+  background-color: var(--cuke-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.75em;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--cuke-green-800);
+}
+
+a {
+  color: var(--cuke-accent);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Accessibility
+-------------------------------------------------- */
+:focus-visible {
+  outline: 3px solid var(--cuke-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 4. Layout & Grid System
+-------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Responsive 12-column grid */
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .col-span-1 { grid-column: span 1 / span 1; }
+  .col-span-2 { grid-column: span 2 / span 2; }
+  .col-span-3 { grid-column: span 3 / span 3; }
+  .col-span-4 { grid-column: span 4 / span 4; }
+  .col-span-6 { grid-column: span 6 / span 6; }
+  .col-span-8 { grid-column: span 8 / span 8; }
+  .col-span-12 { grid-column: span 12 / span 12; }
+}
+
+@media (min-width: 1024px) {
+  /* Add tablet/desktop specific grid adjustments if needed */
+}
+
+@media (min-width: 1440px) {
+  /* Add large desktop specific grid adjustments if needed */
+}
+
+/* 5. Utility Classes
+-------------------------------------------------- */
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-1 { gap: 0.5rem; }
+.gap-2 { gap: 1rem; }
+.gap-4 { gap: 2rem; }
+
+.p-2 { padding: 1rem; }
+.p-4 { padding: 2rem; }
+.py-4 { padding-top: 2rem; padding-bottom: 2rem; }
+.px-4 { padding-left: 2rem; padding-right: 2rem; }
+
+.text-center { text-align: center; }
+.rounded { border-radius: 0.25rem; }
+.shadow { box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+
+/* 6. Components (Basic styles)
+-------------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--cuke-bg);
+  z-index: 10;
+  border-bottom: 1px solid var(--cuke-green-50);
+  height: var(--header-height);
+}
+
+.site-footer {
+  background-color: var(--cuke-green-50);
+  border-top: 2px solid var(--cuke-green-200);
+  padding: 2rem var(--container-padding);
+  margin-top: 4rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid var(--cuke-green-200);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.card__content {
+  padding: 1.5rem;
+}
+.card__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--cuke-accent);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.btn:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}

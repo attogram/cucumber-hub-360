@@ -1,0 +1,48 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="grid">
+      <div class="col-span-12 md:col-span-4">
+        <h4>About Cucumber Hub 360°</h4>
+        <p>{{ site.description | truncate: 150 }}</p>
+      </div>
+
+      <div class="col-span-6 md:col-span-2">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Skincare</a></li>
+          <li><a href="#">Growing</a></li>
+          <li><a href="#">History</a></li>
+        </ul>
+      </div>
+
+      <div class="col-span-6 md:col-span-2">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="col-span-12 md:col-span-4">
+        <h4>Subscribe to our Newsletter</h4>
+        <p>Get the latest cucumber news and recipes delivered to your inbox.</p>
+        <form action="#" method="post">
+          <label for="email_address" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="email_address"
+            name="email_address"
+            placeholder="your.email@example.com"
+            required
+          />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p>&copy; {% now "YYYY" %} {{ site.title }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
