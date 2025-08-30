@@ -7,7 +7,7 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/attogram/cucumber-hub-360?style=flat)](https://github.com/attogram/cucumber-hub-360/commits/main/)
 [![License](https://img.shields.io/github/license/attogram/cucumber-hub-360?style=flat)](./LICENSE)
 
-# Welcome test repo cucumber-hub-360
+# Cucumber Hub 360° - All Things Cucumber
 
 This repo is a test of the [attogram/base](https://github.com/attogram/base) publishing system
 
