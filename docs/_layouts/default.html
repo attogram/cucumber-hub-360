@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      {% if page.title %} {{ page.title }} | {{ site.title }} {% else %} {{
+      site.title }} {% endif %}
+    </title>
+
+    <meta
+      name="description"
+      content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160, '...' }}"
+    />
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" />
+
+    <!-- Preconnect to Google Fonts if using Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="sr-only" href="#main-content">Skip to main content</a>
+
+    {% include header.html %}
+
+    <main id="main-content">{{ content }}</main>
+
+    {% include footer.html %}
+  </body>
+</html>

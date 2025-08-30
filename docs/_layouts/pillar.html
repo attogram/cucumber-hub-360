@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<article class="container">
+  <header class="py-4 text-center">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      {{ page.date | date: "%B %d, %Y" }} • In
+      <a href="/pillars/{{ page.pillar }}"
+        >{{ page.pillar | replace: '-', ' ' | capitalize }}</a
+      >
+    </p>
+  </header>
+
+  {% if page.image %}
+  <figure class="featured-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
+  </figure>
+  {% endif %}
+
+  <div class="post-content">{{ content }}</div>
+
+  <hr />
+
+  <aside class="related-articles">
+    <h3>Related Articles</h3>
+    <ul>
+      {% comment %}
+      <!-- TODO: Add logic to list 2-3 sibling articles from the same pillar. -->
+      <!-- This will require iterating through site.collections[page.pillar].docs -->
+      {% endcomment %}
+      <li><a href="#">Related Article 1</a></li>
+      <li><a href="#">Related Article 2</a></li>
+    </ul>
+  </aside>
+
+  <aside class="cross-pillar-cta">
+    <h3>Explore Another Pillar</h3>
+    {% comment %}
+    <!-- TODO: Add a CTA pointing to the most relevant other pillar. -->
+    {% endcomment %}
+    <p>
+      Enjoyed this? Dive into our <a href="#">Cucumber Skincare</a> pillar for
+      more refreshing content!
+    </p>
+  </aside>
+</article>

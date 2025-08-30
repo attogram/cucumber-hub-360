@@ -1,0 +1,2 @@
+# Ignore the Jekyll-processed CSS file because Prettier doesn't understand Liquid tags.
+docs/_assets/css/main.css
