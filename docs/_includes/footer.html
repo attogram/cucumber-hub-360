@@ -65,7 +65,10 @@
     </div>
 
     <div class="footer-bottom text-center">
-      <p>&copy; {% now "YYYY" %} {{ site.title }}. All rights reserved.</p>
+      <p>
+        &copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights
+        reserved.
+      </p>
     </div>
   </div>
 </footer>
