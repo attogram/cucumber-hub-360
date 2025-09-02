@@ -44,7 +44,7 @@ title: Home
         <div class="col-span-12 md:col-span-4">
             <div class="card">
                 <div class="card__content">
-                    <h3 class="card__title"><a href="#">All-Cucumber Recipes</a></h3>
+                    <h3 class="card__title"><a href="{{ '/pillars/all-cucumber-recipes/' | relative_url }}">All-Cucumber Recipes</a></h3>
                     <p>From refreshing salads to surprising main courses, discover recipes where cucumber is the star.</p>
                 </div>
             </div>
@@ -52,7 +52,7 @@ title: Home
         <div class="col-span-12 md:col-span-4">
             <div class="card">
                 <div class="card__content">
-                    <h3 class="card__title"><a href="#">Cucumber Skincare</a></h3>
+                    <h3 class="card__title"><a href="{{ '/pillars/cucumber-skincare-detox/' | relative_url }}">Cucumber Skincare</a></h3>
                     <p>Unlock the secrets of cucumber for your skin with our DIY beauty formulas and detox programs.</p>
                 </div>
             </div>
@@ -60,7 +60,7 @@ title: Home
         <div class="col-span-12 md:col-span-4">
             <div class="card">
                 <div class="card__content">
-                    <h3 class="card__title"><a href="#">Cucumber Growing</a></h3>
+                    <h3 class="card__title"><a href="{{ '/pillars/cucumber-growing/' | relative_url }}">Cucumber Growing</a></h3>
                     <p>Everything you need to know, from planting calendars to pest control for a bountiful harvest.</p>
                 </div>
             </div>
@@ -68,7 +68,7 @@ title: Home
         <div class="col-span-12 md:col-span-4">
             <div class="card">
                 <div class="card__content">
-                    <h3 class="card__title"><a href="#">Scientific Research</a></h3>
+                    <h3 class="card__title"><a href="{{ '/pillars/cucumber-scientific-research/' | relative_url }}">Scientific Research</a></h3>
                     <p>We summarize peer-reviewed studies on cucumber nutrition and health benefits.</p>
                 </div>
             </div>
@@ -76,7 +76,7 @@ title: Home
         <div class="col-span-12 md:col-span-4">
             <div class="card">
                 <div class="card__content">
-                    <h3 class="card__title"><a href="#">Zero-Waste Cucumber</a></h3>
+                    <h3 class="card__title"><a href="{{ '/pillars/zero-waste-cucumber/' | relative_url }}">Zero-Waste Cucumber</a></h3>
                     <p>Learn creative upcycling ideas and use our calculators to measure your environmental footprint.</p>
                 </div>
             </div>
