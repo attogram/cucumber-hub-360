@@ -1,4 +1,6 @@
 # Site settings
+url: "https://attogram.github.io"
+baseurl: "/cucumber-hub-360"
 title: Cucumber Hub 360° - All Things Cucumber
 description: >-
   Your ultimate cucumber destination: recipes, skincare, zero-waste tips, smart
@@ -11,6 +13,8 @@ source: docs
 # Build settings
 markdown: kramdown
 permalink: pretty
+include:
+  - "_assets"
 
 # Collections
 # This defines all the content pillars for the site.
